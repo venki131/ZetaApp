@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.zetaapp.search.SearchViewModel" />
+    </data>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".search.SearchFragment">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:id="@+id/etSearch"
+        android:hint="@string/custom_search"
+        android:gravity="center"
+        android:background="@drawable/et_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSearch"
+        app:layout_constraintTop_toBottomOf="@id/etSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:clickable="true"
+        android:text="@string/search"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--</layout-->
